@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caddindiarnd.in</title>
+    <link rel="stylesheet" href="Contact.css" />
+  </head>
+  <body>
+    <main>
+      <div class="top-container">
+        <p>+91 123452233</p>
+        <a href="mailto:Caddforlife@gmail.com">Caddforlife@gmail.com</a>
+      </div>
+      <section class="slider">
+        <img class="logo" src="/images-contact/logo.png" alt="logo" />
+        <img class="menu" src="menu.png" alt="" />
+
+        <div class="nav-links">
+          <ul class="nav-link">
+            <li>Home</li>
+            <li>Courses</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <!--  <div class="slider-section">
+          <img src="image-1.png" class="slide" alt="" />
+          <img src="image-2.png" class="slide" alt="" />
+          <img src="image-3.png" class="slide" alt="" />
+        </div> -->
+        <!-- <img
+          src="left-arrow.png"
+          onclick="previousSlide()"
+          class="arrow-left"
+          alt=""
+        />
+        <img
+          src="right-arrow.png"
+          class="arrow-right"
+          onclick="nextSlide()"
+          alt=""
+        /> -->
+      </section>
+      <section class="contact-forms">
+        <div class="right">
+          <h2 class="headers">Contact Us</h2>
+          <p class="right-text">
+            We are always here for you- whether it’s feedback, assistance or you
+            just want to know more about us. Please feel free to reach out to
+            us!
+          </p>
+        </div>
+        <div class="left">
+          <div class="btns">
+            <div class="customer-support" onclick="openPopup('.customer-support','.popup-customer-support')">
+              <p class="btn-container">
+                <img
+                  class="support-img"
+                  onmouseover="hoverIn(this)"
+                  onmouseout="hoverOut(this)"
+                  src="/images-contact/support.png"
+                  alt=""
+                /><span>Customer Support</span>
+              </p>
+            </div>
+            <div class="business-support" onclick="openPopup('.business-support','.popup-business-support')">
+              <p class="btn-container">
+                <img src="/images-contact/business.png.png" alt="" /><span
+                  >Business Enquiry</span
+                >
+              </p>
+            </div>
+            <div class="general-support" onclick="openPopup('.general-support','.popup-general-support')" >
+              <p class="btn-container">
+                <img src="/images-contact/phone.png.png" alt="" /><span>General Contact</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="popup-customer-support">
+      <div class="heading">
+        <h2 class="headers">Customer Support</h2>
+        <p class="heading-text">
+          Reach out to us for queries, feedback and more. Please fill the form,
+          Our Customer support team will get in touch within 48 business hours.
+        </p>
+      </div>
+
+      <img class="cancel" onclick="closePopup('.cancel','.popup-customer-support')"   src="/images-contact/cancel.png" alt="" />
+      <article class="popup-container">
+        <form class="customer-form" action="">
+          <input type="text" placeholder="Name" />
+          <input type="text" placeholder="Enter College Name" />
+          <input type="text" placeholder="Select State" />
+          <input type="text" placeholder="Select District" />
+          <input placeholder="phone Number" type="text" name="" id="" />
+          <input type="email" name="" placeholder="email" id="" />
+          <button class="btn-container-sub" type="submit">Submit</button>
+        </form>
+      </article>
+      </div>
+      <div class="popup-business-support">
+        <div class="heading">
+          <h2 class="headers">Business Enquery</h2>
+          <p class="heading-text">
+            Reach out to us for queries, feedback and more. Please fill the form,
+            Our Customer support team will get in touch within 48 business hours.
+          </p>
+        </div>
+  <img class="cancel1"  src="/images-contact/cancel.png" onclick="closePopup('.cancel1','.popup-business-support')" alt="" />
+        <article class="popup-container-1">
+          <form class="business-form" action="">
+            <input type="text" placeholder="Full Name" />
+            <input type="text" placeholder="Organization Name" />
+            <input placeholder="phone Number" type="text" name="" id="" />
+            <input type="email" name="" placeholder="email" id="" />
+            <button class="btn-container-sub" type="submit">Submit</button>
+          </form>
+        </article>
+      </div>
+      <div class="popup-general-support">
+        <div class="heading">
+          <h2 class="headers">General Support</h2>
+          <p class="heading-text">
+            Reach out to us for queries, feedback and more. Please fill the form,
+            Our Customer support team will get in touch within 48 business hours.
+          </p>
+        </div>
+  
+        <img class="cancel2" src="/images-contact/cancel.png" onclick="closePopup('.cancel2','.popup-general-support')" alt="" />
+        <article class="popup-container-3">
+          <form class="general-form" action="">
+            <input type="text" placeholder="Name" />
+            <input placeholder="phone Number" type="text" name="phone" id="" />
+            <input type="email" name="email" placeholder="email" id="" />
+            <button onclick="submitForm(e)" class="btn-container-sub" type="submit">Submit</button>
+          </form>
+        
+        
+        </article>
+      </div>
+      
+    </div>
+  </body>
+  <script src="Contact.js"></script>
+</html>
